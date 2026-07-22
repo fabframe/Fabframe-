@@ -1,174 +1,172 @@
-<!--
-FABFRAME BLOG EMBED CODE
-Paste this complete block inside a WordPress/website "Custom HTML" block.
-Do not paste it into a Visual/Text paragraph block.
--->
 <style>
-#ffw-page{
-  --navy:#0b1f33;
-  --navy2:#123752;
-  --teal:#0e8f8d;
-  --teal2:#d9f3f1;
-  --orange:#f39a32;
-  --orange2:#fff0df;
-  --cream:#f6f8f9;
-  --white:#fff;
-  --ink:#172530;
-  --muted:#60717d;
-  --line:#dbe5ea;
-  --shadow:0 18px 45px rgba(11,31,51,.12);
+#fabframe-wardrobe-blog{
+  --primary:#16324f;
+  --primary-dark:#091d30;
+  --blue:#24658c;
+  --orange:#e8892f;
+  --orange-light:#fff0df;
+  --cream:#f7f4ee;
+  --white:#ffffff;
+  --text:#263642;
+  --muted:#687985;
+  --border:#dce5ea;
+  --green:#25d366;
+  --shadow:0 18px 48px rgba(12,40,62,.12);
   font-family:Arial,Helvetica,sans-serif;
-  color:var(--ink);
+  color:var(--text);
   background:var(--cream);
-  line-height:1.65;
+  line-height:1.7;
   overflow:hidden;
 }
 
-#ffw-page *{
+#fabframe-wardrobe-blog *{
   box-sizing:border-box;
 }
 
-#ffw-page a{
-  text-decoration:none;
+#fabframe-wardrobe-blog a{
   color:inherit;
+  text-decoration:none;
 }
 
-#ffw-page img{
-  display:block;
+#fabframe-wardrobe-blog img{
   width:100%;
-  height:auto;
+  display:block;
 }
 
-#ffw-page .ffw-wrap{
+#fabframe-wardrobe-blog p,
+#fabframe-wardrobe-blog h1,
+#fabframe-wardrobe-blog h2,
+#fabframe-wardrobe-blog h3{
+  margin-top:0;
+}
+
+#fabframe-wardrobe-blog .ff-container{
   width:min(1160px,92%);
   margin:auto;
 }
 
-#ffw-page .ffw-top{
-  padding:9px 4%;
+#fabframe-wardrobe-blog .ff-topbar{
+  padding:10px 5%;
+  color:#dce8ef;
   background:#061522;
-  color:#dce9ef;
   text-align:center;
   font-size:13px;
   font-weight:700;
 }
 
-#ffw-page .ffw-top a{
-  color:#ffd39f;
+#fabframe-wardrobe-blog .ff-topbar a{
+  color:#ffd19a;
   text-decoration:underline;
-  text-underline-offset:3px;
+  text-underline-offset:4px;
+  margin:0 4px;
 }
 
-#ffw-page .ffw-nav{
-  padding:15px 0;
+#fabframe-wardrobe-blog .ff-hero{
+  position:relative;
+  color:#fff;
+  background:
+    radial-gradient(
+      circle at 85% 30%,
+      rgba(36,101,140,.38),
+      transparent 36%
+    ),
+    linear-gradient(
+      125deg,
+      #071827 0%,
+      #16324f 58%,
+      #245c78 100%
+    );
+}
+
+#fabframe-wardrobe-blog .ff-nav{
+  padding:20px 0;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:22px;
+  gap:25px;
 }
 
-#ffw-page .ffw-logo{
+#fabframe-wardrobe-blog .ff-brand{
   display:flex;
   align-items:center;
-  gap:11px;
-  color:var(--white);
+  gap:12px;
 }
 
-#ffw-page .ffw-logo b{
-  width:44px;
-  height:44px;
+#fabframe-wardrobe-blog .ff-brand-mark{
+  width:48px;
+  height:48px;
   display:grid;
   place-items:center;
-  border-radius:12px;
-  background:linear-gradient(135deg,var(--orange),#ffd19a);
-  color:var(--navy);
-  font-size:22px;
+  color:var(--primary-dark);
+  border-radius:14px;
+  background:linear-gradient(135deg,var(--orange),#ffd2a0);
+  font-size:23px;
+  font-weight:900;
 }
 
-#ffw-page .ffw-logo strong{
+#fabframe-wardrobe-blog .ff-brand strong{
   display:block;
-  font-size:21px;
+  color:#fff;
+  font-size:22px;
   line-height:1.1;
 }
 
-#ffw-page .ffw-logo small{
-  display:block;
-  color:#a9c1cf;
-  font-size:9px;
+#fabframe-wardrobe-blog .ff-brand span{
+  color:#afc4d1;
+  font-size:10px;
+  font-weight:700;
   letter-spacing:1.4px;
   text-transform:uppercase;
-  margin-top:4px;
 }
 
-#ffw-page .ffw-navlinks{
+#fabframe-wardrobe-blog .ff-navlinks{
   display:flex;
   align-items:center;
   gap:6px;
   flex-wrap:wrap;
-  justify-content:flex-end;
 }
 
-#ffw-page .ffw-navlinks a{
-  padding:8px 11px;
-  border-radius:99px;
-  color:#d6e6ee;
+#fabframe-wardrobe-blog .ff-navlinks a{
+  padding:9px 12px;
+  color:#d8e5eb;
+  border-radius:999px;
   font-size:12px;
-  font-weight:700;
+  font-weight:800;
 }
 
-#ffw-page .ffw-navlinks a:last-child{
+#fabframe-wardrobe-blog .ff-navlinks a:hover{
+  background:rgba(255,255,255,.08);
+}
+
+#fabframe-wardrobe-blog .ff-navlinks .ff-nav-cta{
+  color:var(--primary-dark);
   background:var(--orange);
-  color:var(--navy);
 }
 
-#ffw-page .ffw-hero{
-  position:relative;
-  background:linear-gradient(
-    125deg,
-    #071a2a 0%,
-    var(--navy2) 65%,
-    #0b6464 140%
-  );
-  color:var(--white);
-}
-
-#ffw-page .ffw-hero:after{
-  content:"";
-  position:absolute;
-  width:340px;
-  height:340px;
-  border:70px solid rgba(255,255,255,.035);
-  border-radius:50%;
-  right:-170px;
-  top:80px;
-}
-
-#ffw-page .ffw-herogrid{
+#fabframe-wardrobe-blog .ff-hero-grid{
   min-height:650px;
-  padding:72px 0 90px;
+  padding:65px 0 100px;
   display:grid;
-  grid-template-columns:1.02fr .98fr;
-  gap:58px;
+  grid-template-columns:1.05fr .95fr;
   align-items:center;
-  position:relative;
-  z-index:2;
+  gap:55px;
 }
 
-#ffw-page .ffw-kicker{
+#fabframe-wardrobe-blog .ff-label{
   display:inline-flex;
   align-items:center;
   gap:9px;
-  padding:7px 12px;
+  padding:7px 13px;
   border:1px solid rgba(255,255,255,.18);
-  border-radius:99px;
+  border-radius:999px;
   background:rgba(255,255,255,.07);
   font-size:11px;
-  font-weight:800;
-  letter-spacing:1.1px;
+  font-weight:900;
+  letter-spacing:1.2px;
   text-transform:uppercase;
 }
 
-#ffw-page .ffw-kicker:before{
+#fabframe-wardrobe-blog .ff-label:before{
   content:"";
   width:8px;
   height:8px;
@@ -176,817 +174,892 @@ Do not paste it into a Visual/Text paragraph block.
   background:var(--orange);
 }
 
-#ffw-page h1,
-#ffw-page h2,
-#ffw-page h3,
-#ffw-page p{
-  margin-top:0;
-}
-
-#ffw-page h1{
-  margin:19px 0 20px;
+#fabframe-wardrobe-blog h1{
+  max-width:780px;
+  margin:20px 0;
   font-family:Georgia,serif;
-  font-size:clamp(42px,6vw,74px);
+  font-size:clamp(44px,6.5vw,76px);
   line-height:1.04;
-  letter-spacing:-1.8px;
+  letter-spacing:-2px;
 }
 
-#ffw-page .ffw-lead{
+#fabframe-wardrobe-blog .ff-hero-copy p{
   max-width:720px;
-  color:#c9dce5;
+  margin-bottom:14px;
+  color:#cadbe4;
   font-size:16px;
-  margin-bottom:15px;
 }
 
-#ffw-page .ffw-lead strong{
+#fabframe-wardrobe-blog .ff-hero-copy strong{
   color:#fff;
 }
 
-#ffw-page .ffw-actions{
+#fabframe-wardrobe-blog .ff-inline-link{
+  color:#ffd19a;
+  font-weight:800;
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
+
+#fabframe-wardrobe-blog .ff-actions{
+  margin-top:26px;
   display:flex;
   flex-wrap:wrap;
   gap:11px;
-  margin-top:25px;
 }
 
-#ffw-page .ffw-btn{
-  min-height:49px;
-  padding:0 19px;
+#fabframe-wardrobe-blog .ff-btn{
+  min-height:51px;
+  padding:0 20px;
   display:inline-flex;
   align-items:center;
   justify-content:center;
+  border:1px solid transparent;
   border-radius:12px;
   font-size:13px;
-  font-weight:800;
-  border:1px solid transparent;
-  transition:.2s;
+  font-weight:900;
+  transition:.25s ease;
 }
 
-#ffw-page .ffw-btn:hover{
-  transform:translateY(-2px);
+#fabframe-wardrobe-blog .ff-btn:hover{
+  transform:translateY(-3px);
 }
 
-#ffw-page .ffw-btn-orange{
+#fabframe-wardrobe-blog .ff-btn-orange{
+  color:var(--primary-dark);
   background:var(--orange);
-  color:var(--navy);
-  box-shadow:0 12px 27px rgba(243,154,50,.25);
+  box-shadow:0 14px 30px rgba(232,137,47,.25);
 }
 
-#ffw-page .ffw-btn-white{
+#fabframe-wardrobe-blog .ff-btn-white{
+  color:var(--primary);
   background:#fff;
-  color:var(--navy);
 }
 
-#ffw-page .ffw-btn-outline{
-  border-color:rgba(255,255,255,.28);
+#fabframe-wardrobe-blog .ff-btn-outline{
   color:#fff;
+  border-color:rgba(255,255,255,.28);
   background:rgba(255,255,255,.06);
 }
 
-#ffw-page .ffw-visual{
+#fabframe-wardrobe-blog .ff-visual{
   padding:22px;
-  border:1px solid rgba(255,255,255,.13);
+  border:1px solid rgba(255,255,255,.14);
   border-radius:28px;
   background:rgba(255,255,255,.07);
   box-shadow:0 35px 80px rgba(0,0,0,.24);
 }
 
-#ffw-page .ffw-room{
+#fabframe-wardrobe-blog .ff-room{
+  min-height:450px;
   position:relative;
-  min-height:455px;
   overflow:hidden;
   border-radius:20px;
-  background:linear-gradient(145deg,#f1ece4,#dce5e9);
+  background:linear-gradient(145deg,#ede9e1,#d9e3e7);
 }
 
-#ffw-page .ffw-room:before{
+#fabframe-wardrobe-blog .ff-room:after{
   content:"";
   position:absolute;
   left:0;
   right:0;
   bottom:0;
-  height:28%;
-  background:linear-gradient(165deg,#c8b49a,#9c866d);
+  height:27%;
+  background:linear-gradient(160deg,#c5ad8f,#8f765f);
 }
 
-#ffw-page .ffw-wallline{
-  position:absolute;
-  left:0;
-  right:0;
-  bottom:28%;
-  height:2px;
-  background:#a7b6bd;
-}
-
-#ffw-page .ffw-closet{
+#fabframe-wardrobe-blog .ff-wardrobe{
   position:absolute;
   left:8%;
   right:8%;
   top:9%;
-  bottom:22%;
+  bottom:20%;
+  z-index:2;
   display:grid;
-  grid-template-columns:1.15fr .85fr;
-  border:7px solid #152b3c;
+  grid-template-columns:1.1fr .9fr;
+  border:7px solid #132d42;
   border-radius:8px;
-  background:#152b3c;
-  box-shadow:0 24px 40px rgba(13,35,50,.25);
-}
-
-#ffw-page .ffw-door{
-  position:relative;
-  background:linear-gradient(130deg,#cdd7dc,#f8fbfc);
-  border-right:4px solid #152b3c;
   overflow:hidden;
+  background:#132d42;
+  box-shadow:0 25px 45px rgba(8,31,48,.25);
 }
 
-#ffw-page .ffw-door:before{
+#fabframe-wardrobe-blog .ff-glass-door{
+  position:relative;
+  background:linear-gradient(135deg,#aebfc8,#f6fafb);
+  border-right:5px solid #132d42;
+}
+
+#fabframe-wardrobe-blog .ff-glass-door:before{
   content:"";
   position:absolute;
   inset:0;
   background:linear-gradient(
     115deg,
-    transparent 20%,
-    rgba(255,255,255,.9) 42%,
-    transparent 58%
+    transparent 22%,
+    rgba(255,255,255,.85) 43%,
+    transparent 59%
   );
-  opacity:.6;
 }
 
-#ffw-page .ffw-open{
-  padding:24px 18px;
-  background:#e4d9ca;
+#fabframe-wardrobe-blog .ff-open-side{
+  padding:22px 18px;
   display:flex;
   flex-direction:column;
-  gap:13px;
+  gap:14px;
+  background:#e7d9c6;
 }
 
-#ffw-page .ffw-shelf{
+#fabframe-wardrobe-blog .ff-shelf{
   height:6px;
-  background:#9c816a;
-  border-radius:3px;
+  border-radius:4px;
+  background:#9e7d61;
 }
 
-#ffw-page .ffw-rail{
+#fabframe-wardrobe-blog .ff-rail{
   height:5px;
-  background:#142d3e;
   margin-top:8px;
-  position:relative;
+  background:#18354a;
 }
 
-#ffw-page .ffw-clothes{
+#fabframe-wardrobe-blog .ff-clothes{
+  margin-top:-12px;
   display:flex;
   justify-content:center;
   gap:7px;
-  margin-top:-9px;
 }
 
-#ffw-page .ffw-clothes i{
+#fabframe-wardrobe-blog .ff-clothes i{
+  width:28px;
+  height:76px;
   display:block;
-  width:27px;
-  height:75px;
-  border-radius:5px 5px 11px 11px;
-  background:#0e8f8d;
+  border-radius:5px 5px 12px 12px;
+  background:#24658c;
   clip-path:polygon(
     20% 0,
     80% 0,
-    100% 18%,
-    85% 31%,
+    100% 19%,
+    85% 32%,
     85% 100%,
     15% 100%,
-    15% 31%,
-    0 18%
+    15% 32%,
+    0 19%
   );
 }
 
-#ffw-page .ffw-clothes i:nth-child(2){
-  background:#f39a32;
-  height:83px;
+#fabframe-wardrobe-blog .ff-clothes i:nth-child(2){
+  height:84px;
+  background:#e8892f;
 }
 
-#ffw-page .ffw-clothes i:nth-child(3){
-  background:#6a7e8b;
-  height:70px;
+#fabframe-wardrobe-blog .ff-clothes i:nth-child(3){
+  height:71px;
+  background:#71838d;
 }
 
-#ffw-page .ffw-drawers{
+#fabframe-wardrobe-blog .ff-drawers{
   margin-top:auto;
   display:grid;
   gap:7px;
 }
 
-#ffw-page .ffw-drawers span{
-  height:30px;
-  background:#f7f0e6;
-  border:1px solid #bfad97;
+#fabframe-wardrobe-blog .ff-drawers span{
+  height:29px;
+  border:1px solid #bda88f;
   border-radius:5px;
+  background:#fbf4e9;
 }
 
-#ffw-page .ffw-badge{
+#fabframe-wardrobe-blog .ff-visual-badge{
   position:absolute;
-  right:16px;
+  right:15px;
   bottom:15px;
+  z-index:5;
   padding:10px 13px;
-  border-radius:11px;
-  background:rgba(7,26,42,.9);
   color:#fff;
+  border-radius:10px;
+  background:rgba(7,24,39,.9);
   font-size:11px;
-  font-weight:800;
-  box-shadow:0 10px 24px rgba(0,0,0,.18);
+  font-weight:900;
 }
 
-#ffw-page .ffw-strip{
-  margin-top:-38px;
+#fabframe-wardrobe-blog .ff-stats{
   position:relative;
-  z-index:5;
+  z-index:10;
+  margin-top:-40px;
+  padding:12px;
   display:grid;
   grid-template-columns:repeat(4,1fr);
   gap:10px;
-  padding:12px;
-  border:1px solid var(--line);
-  border-radius:20px;
+  border:1px solid var(--border);
+  border-radius:21px;
   background:#fff;
   box-shadow:var(--shadow);
 }
 
-#ffw-page .ffw-stat{
-  padding:16px 12px;
-  border-radius:13px;
-  background:#f4f8fa;
+#fabframe-wardrobe-blog .ff-stat{
+  padding:17px 12px;
+  border-radius:14px;
+  background:#f3f7f9;
   text-align:center;
 }
 
-#ffw-page .ffw-stat strong{
+#fabframe-wardrobe-blog .ff-stat strong{
   display:block;
-  color:var(--navy);
+  color:var(--primary);
   font-size:15px;
 }
 
-#ffw-page .ffw-stat span{
+#fabframe-wardrobe-blog .ff-stat span{
   display:block;
+  margin-top:3px;
   color:var(--muted);
   font-size:11px;
-  margin-top:3px;
 }
 
-#ffw-page .ffw-main{
-  padding:72px 0 10px;
+#fabframe-wardrobe-blog .ff-main{
+  padding:75px 0 15px;
 }
 
-#ffw-page .ffw-layout{
+#fabframe-wardrobe-blog .ff-layout{
   display:grid;
-  grid-template-columns:260px minmax(0,1fr);
+  grid-template-columns:255px minmax(0,1fr);
   gap:28px;
   align-items:start;
 }
 
-#ffw-page .ffw-toc{
+#fabframe-wardrobe-blog .ff-toc{
   position:sticky;
   top:20px;
   padding:20px;
-  border:1px solid var(--line);
+  border:1px solid var(--border);
   border-radius:18px;
   background:#fff;
-  box-shadow:0 10px 28px rgba(11,31,51,.07);
+  box-shadow:0 12px 30px rgba(12,40,62,.07);
 }
 
-#ffw-page .ffw-toc strong{
+#fabframe-wardrobe-blog .ff-toc strong{
   display:block;
-  color:var(--navy);
-  font-size:15px;
   margin-bottom:10px;
+  color:var(--primary);
+  font-size:15px;
 }
 
-#ffw-page .ffw-toc a{
+#fabframe-wardrobe-blog .ff-toc a{
   display:block;
-  padding:8px 0;
-  border-bottom:1px solid #edf1f3;
+  padding:9px 0;
   color:var(--muted);
+  border-bottom:1px solid #edf1f3;
   font-size:12px;
-  font-weight:700;
+  font-weight:800;
 }
 
-#ffw-page .ffw-toc a:last-child{
+#fabframe-wardrobe-blog .ff-toc a:last-child{
   border-bottom:0;
 }
 
-#ffw-page .ffw-card{
+#fabframe-wardrobe-blog .ff-card{
   margin-bottom:28px;
   padding:36px;
-  border:1px solid var(--line);
+  scroll-margin-top:25px;
+  border:1px solid var(--border);
   border-radius:24px;
   background:#fff;
-  box-shadow:0 13px 34px rgba(11,31,51,.075);
-  scroll-margin-top:20px;
+  box-shadow:0 14px 36px rgba(12,40,62,.075);
 }
 
-#ffw-page .ffw-label{
-  color:var(--teal);
+#fabframe-wardrobe-blog .ff-eyebrow{
+  margin-bottom:8px;
+  color:var(--orange);
   font-size:11px;
   font-weight:900;
   letter-spacing:1.5px;
   text-transform:uppercase;
-  margin-bottom:7px;
 }
 
-#ffw-page h2{
+#fabframe-wardrobe-blog h2{
   margin-bottom:14px;
-  color:var(--navy);
+  color:var(--primary);
   font-family:Georgia,serif;
-  font-size:clamp(30px,4.3vw,47px);
+  font-size:clamp(30px,4vw,47px);
   line-height:1.12;
-  letter-spacing:-.5px;
+  letter-spacing:-.6px;
 }
 
-#ffw-page h3{
+#fabframe-wardrobe-blog h3{
   margin-bottom:8px;
-  color:var(--navy);
+  color:var(--primary);
   font-size:18px;
-  line-height:1.25;
+  line-height:1.3;
 }
 
-#ffw-page .ffw-card > p{
+#fabframe-wardrobe-blog .ff-card > p{
+  margin-bottom:14px;
   color:var(--muted);
-  margin-bottom:13px;
 }
 
-#ffw-page .ffw-intro{
-  padding:38px;
-  background:linear-gradient(135deg,#fff,#e9f8f7);
+#fabframe-wardrobe-blog .ff-text-link{
+  color:var(--blue);
+  font-weight:900;
+  text-decoration:underline;
+  text-underline-offset:4px;
 }
 
-#ffw-page .ffw-note{
+#fabframe-wardrobe-blog .ff-note{
   margin-top:20px;
-  padding:17px 18px;
+  padding:18px;
+  color:#6d441b;
   border-left:5px solid var(--orange);
-  border-radius:10px;
-  background:var(--orange2);
-  color:#6a431d;
+  border-radius:11px;
+  background:var(--orange-light);
   font-size:13px;
 }
 
-#ffw-page .ffw-gallery{
+#fabframe-wardrobe-blog .ff-gallery{
+  margin-top:23px;
   display:grid;
   grid-template-columns:1.15fr .85fr;
   gap:14px;
-  margin-top:23px;
 }
 
-#ffw-page .ffw-photo{
+#fabframe-wardrobe-blog .ff-photo{
   position:relative;
   min-height:280px;
+  margin:0;
   overflow:hidden;
   border-radius:18px;
-  background:linear-gradient(135deg,#dce9ed,#f7f3ec);
+  background:#e7edf0;
 }
 
-#ffw-page .ffw-photo img{
+#fabframe-wardrobe-blog .ff-photo img{
   height:100%;
   min-height:280px;
   object-fit:cover;
 }
 
-#ffw-page .ffw-photo span{
+#fabframe-wardrobe-blog .ff-photo span{
   position:absolute;
   left:14px;
   bottom:14px;
   padding:8px 11px;
-  border-radius:9px;
-  background:rgba(7,26,42,.88);
   color:#fff;
+  border-radius:9px;
+  background:rgba(7,24,39,.88);
   font-size:11px;
-  font-weight:800;
+  font-weight:900;
 }
 
-#ffw-page .ffw-types{
+#fabframe-wardrobe-blog .ff-types{
+  margin-top:22px;
   display:grid;
   grid-template-columns:repeat(2,1fr);
   gap:15px;
-  margin-top:22px;
 }
 
-#ffw-page .ffw-type{
+#fabframe-wardrobe-blog .ff-type{
   overflow:hidden;
-  border:1px solid var(--line);
+  border:1px solid var(--border);
   border-radius:18px;
   background:#fff;
 }
 
-#ffw-page .ffw-type img{
+#fabframe-wardrobe-blog .ff-type img{
   height:220px;
   object-fit:cover;
   background:#eef2f4;
 }
 
-#ffw-page .ffw-typebody{
+#fabframe-wardrobe-blog .ff-type-content{
   padding:20px;
 }
 
-#ffw-page .ffw-typebody p{
+#fabframe-wardrobe-blog .ff-type-content p{
   margin:0;
   color:var(--muted);
   font-size:13px;
 }
 
-#ffw-page .ffw-city{
-  display:inline-flex;
+#fabframe-wardrobe-blog .ff-city-tag{
   margin-top:12px;
-  padding:6px 9px;
-  border-radius:99px;
-  background:var(--teal2);
-  color:#096866;
+  padding:6px 10px;
+  display:inline-flex;
+  color:#18587d;
+  border-radius:999px;
+  background:#e3f0f7;
   font-size:10px;
-  font-weight:800;
+  font-weight:900;
 }
 
-#ffw-page .ffw-why{
-  background:linear-gradient(135deg,var(--navy),var(--navy2));
-  color:#fff;
-  border:0;
-}
-
-#ffw-page .ffw-why h2,
-#ffw-page .ffw-why h3{
-  color:#fff;
-}
-
-#ffw-page .ffw-why > p{
-  color:#bfd1dc;
-}
-
-#ffw-page .ffw-grid{
+#fabframe-wardrobe-blog .ff-feature-grid{
+  margin-top:20px;
   display:grid;
   grid-template-columns:repeat(2,1fr);
   gap:13px;
-  margin-top:20px;
 }
 
-#ffw-page .ffw-feature{
+#fabframe-wardrobe-blog .ff-feature{
   padding:18px;
-  border:1px solid rgba(255,255,255,.13);
-  border-radius:14px;
-  background:rgba(255,255,255,.065);
-}
-
-#ffw-page .ffw-feature p{
-  margin:5px 0 0;
-  color:#bcd0db;
-  font-size:12px;
-}
-
-#ffw-page .ffw-steps{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:13px;
-  margin-top:22px;
-}
-
-#ffw-page .ffw-step{
-  padding:18px;
-  border:1px solid var(--line);
+  border:1px solid var(--border);
   border-radius:15px;
   background:#f7fafb;
 }
 
-#ffw-page .ffw-step b{
-  width:36px;
-  height:36px;
-  display:grid;
-  place-items:center;
-  border-radius:10px;
-  background:var(--orange2);
-  color:#a85c06;
+#fabframe-wardrobe-blog .ff-feature p{
+  margin:5px 0 0;
+  color:var(--muted);
   font-size:12px;
-  margin-bottom:13px;
 }
 
-#ffw-page .ffw-step p{
+#fabframe-wardrobe-blog .ff-dark-card{
+  color:#fff;
+  border:0;
+  background:linear-gradient(135deg,var(--primary-dark),var(--primary));
+}
+
+#fabframe-wardrobe-blog .ff-dark-card h2,
+#fabframe-wardrobe-blog .ff-dark-card h3{
+  color:#fff;
+}
+
+#fabframe-wardrobe-blog .ff-dark-card > p{
+  color:#c2d3dc;
+}
+
+#fabframe-wardrobe-blog .ff-dark-card .ff-feature{
+  border-color:rgba(255,255,255,.13);
+  background:rgba(255,255,255,.065);
+}
+
+#fabframe-wardrobe-blog .ff-dark-card .ff-feature p{
+  color:#bdd0da;
+}
+
+#fabframe-wardrobe-blog .ff-steps{
+  margin-top:22px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:13px;
+}
+
+#fabframe-wardrobe-blog .ff-step{
+  padding:18px;
+  border:1px solid var(--border);
+  border-radius:15px;
+  background:#f7fafb;
+}
+
+#fabframe-wardrobe-blog .ff-step b{
+  width:36px;
+  height:36px;
+  margin-bottom:13px;
+  display:grid;
+  place-items:center;
+  color:#9b560d;
+  border-radius:10px;
+  background:var(--orange-light);
+  font-size:12px;
+}
+
+#fabframe-wardrobe-blog .ff-step p{
   margin:0;
   color:var(--muted);
   font-size:12px;
 }
 
-#ffw-page .ffw-location{
-  background:linear-gradient(145deg,#fff,#f0f7f8);
+#fabframe-wardrobe-blog .ff-location{
+  background:linear-gradient(145deg,#fff,#edf6f9);
 }
 
-#ffw-page .ffw-tags{
+#fabframe-wardrobe-blog .ff-location-tags{
+  margin:18px 0;
   display:flex;
   flex-wrap:wrap;
   gap:8px;
-  margin:18px 0;
 }
 
-#ffw-page .ffw-tags span{
+#fabframe-wardrobe-blog .ff-location-tags span{
   padding:8px 11px;
-  border:1px solid #bcdedc;
-  border-radius:99px;
+  color:#18587d;
+  border:1px solid #bfd8e6;
+  border-radius:999px;
   background:#fff;
-  color:#0a706e;
   font-size:11px;
-  font-weight:800;
+  font-weight:900;
 }
 
-#ffw-page .ffw-contact{
+#fabframe-wardrobe-blog .ff-contact-box{
   margin-top:20px;
-  padding:19px;
+  padding:20px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:18px;
-  border-radius:15px;
-  background:var(--navy);
+  gap:20px;
   color:#fff;
+  border-radius:16px;
+  background:var(--primary);
 }
 
-#ffw-page .ffw-contact strong{
+#fabframe-wardrobe-blog .ff-contact-box strong{
   display:block;
   font-size:16px;
 }
 
-#ffw-page .ffw-contact small{
+#fabframe-wardrobe-blog .ff-contact-box small{
   display:block;
-  color:#b9ced9;
   margin-top:4px;
+  color:#bed0da;
 }
 
-#ffw-page details{
+#fabframe-wardrobe-blog details{
   margin-bottom:10px;
-  border:1px solid var(--line);
+  overflow:hidden;
+  border:1px solid var(--border);
   border-radius:13px;
   background:#fff;
-  overflow:hidden;
 }
 
-#ffw-page summary{
+#fabframe-wardrobe-blog summary{
   padding:15px 18px;
   cursor:pointer;
-  color:var(--navy);
-  font-weight:800;
+  color:var(--primary);
   font-size:13px;
+  font-weight:900;
 }
 
-#ffw-page details p{
-  padding:0 18px 17px;
+#fabframe-wardrobe-blog details p{
   margin:0;
+  padding:0 18px 17px;
   color:var(--muted);
   font-size:13px;
 }
 
-#ffw-page .ffw-final{
-  padding:66px 5%;
-  text-align:center;
-  color:#fff;
-  background:linear-gradient(120deg,#061522,#0b3c50);
+#fabframe-wardrobe-blog .ff-site-box{
+  margin-top:22px;
+  padding:22px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  border:1px solid #bdd5e2;
+  border-radius:16px;
+  background:#eff7fa;
 }
 
-#ffw-page .ffw-final h2{
+#fabframe-wardrobe-blog .ff-site-box strong{
+  display:block;
+  color:var(--primary);
+  font-size:17px;
+}
+
+#fabframe-wardrobe-blog .ff-site-box span{
+  color:var(--muted);
+  font-size:12px;
+}
+
+#fabframe-wardrobe-blog .ff-final{
+  padding:68px 5%;
   color:#fff;
-  max-width:780px;
+  text-align:center;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(36,101,140,.42),
+      transparent 45%
+    ),
+    #061522;
+}
+
+#fabframe-wardrobe-blog .ff-final h2{
+  max-width:820px;
   margin-left:auto;
   margin-right:auto;
+  color:#fff;
 }
 
-#ffw-page .ffw-final p{
+#fabframe-wardrobe-blog .ff-final p{
   max-width:760px;
   margin:0 auto;
-  color:#c3d7e1;
+  color:#c5d7e0;
 }
 
-#ffw-page .ffw-final .ffw-actions{
+#fabframe-wardrobe-blog .ff-final .ff-actions{
   justify-content:center;
 }
 
-#ffw-page .ffw-footer{
-  padding:32px 5%;
-  background:#04101a;
-  color:#a9bec9;
+#fabframe-wardrobe-blog .ff-footer{
+  padding:34px 5%;
+  color:#a9bdc8;
+  background:#030e17;
   text-align:center;
   font-size:12px;
 }
 
-#ffw-page .ffw-footer a{
+#fabframe-wardrobe-blog .ff-footer strong{
+  color:#fff;
+}
+
+#fabframe-wardrobe-blog .ff-footer a{
   color:#ffd19a;
   text-decoration:underline;
   text-underline-offset:3px;
 }
 
-#ffw-page .ffw-wa{
+#fabframe-wardrobe-blog .ff-floating-wa{
+  min-height:54px;
+  padding:0 17px;
   position:fixed;
   right:17px;
   bottom:17px;
   z-index:9999;
-  min-height:50px;
-  padding:0 16px;
   display:flex;
   align-items:center;
+  justify-content:center;
   gap:8px;
-  border:3px solid #fff;
-  border-radius:99px;
-  background:#25d366;
   color:#fff;
+  border:3px solid #fff;
+  border-radius:999px;
+  background:var(--green);
+  box-shadow:0 16px 36px rgba(37,211,102,.34);
   font-size:12px;
   font-weight:900;
-  box-shadow:0 16px 34px rgba(37,211,102,.32);
 }
 
-#ffw-page .ffw-wa:before{
-  content:"●";
-  font-size:13px;
+#fabframe-wardrobe-blog .ff-floating-wa:before{
+  content:"WA";
+  font-size:11px;
 }
 
 @media(max-width:980px){
-  #ffw-page .ffw-herogrid,
-  #ffw-page .ffw-layout{
+
+  #fabframe-wardrobe-blog .ff-hero-grid,
+  #fabframe-wardrobe-blog .ff-layout{
     grid-template-columns:1fr;
   }
 
-  #ffw-page .ffw-visual{
-    max-width:680px;
-  }
-
-  #ffw-page .ffw-toc{
+  #fabframe-wardrobe-blog .ff-toc{
     position:static;
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:0 14px;
   }
 
-  #ffw-page .ffw-toc strong{
+  #fabframe-wardrobe-blog .ff-toc strong{
     grid-column:1/-1;
   }
 
-  #ffw-page .ffw-steps{
+  #fabframe-wardrobe-blog .ff-steps{
     grid-template-columns:repeat(2,1fr);
   }
 }
 
 @media(max-width:700px){
-  #ffw-page .ffw-nav{
+
+  #fabframe-wardrobe-blog .ff-nav{
     align-items:flex-start;
     flex-direction:column;
   }
 
-  #ffw-page .ffw-navlinks{
+  #fabframe-wardrobe-blog .ff-navlinks{
     display:none;
   }
 
-  #ffw-page .ffw-herogrid{
+  #fabframe-wardrobe-blog .ff-hero-grid{
     min-height:auto;
-    padding:55px 0 72px;
+    padding:50px 0 75px;
     gap:38px;
   }
 
-  #ffw-page h1{
-    font-size:44px;
+  #fabframe-wardrobe-blog h1{
+    font-size:43px;
+    letter-spacing:-1px;
   }
 
-  #ffw-page .ffw-room{
-    min-height:375px;
+  #fabframe-wardrobe-blog .ff-room{
+    min-height:370px;
   }
 
-  #ffw-page .ffw-strip,
-  #ffw-page .ffw-types,
-  #ffw-page .ffw-grid,
-  #ffw-page .ffw-steps,
-  #ffw-page .ffw-gallery{
+  #fabframe-wardrobe-blog .ff-stats,
+  #fabframe-wardrobe-blog .ff-types,
+  #fabframe-wardrobe-blog .ff-feature-grid,
+  #fabframe-wardrobe-blog .ff-steps,
+  #fabframe-wardrobe-blog .ff-gallery{
     grid-template-columns:1fr;
   }
 
-  #ffw-page .ffw-strip{
+  #fabframe-wardrobe-blog .ff-stats{
     margin-top:-25px;
   }
 
-  #ffw-page .ffw-layout{
-    gap:18px;
-  }
-
-  #ffw-page .ffw-toc{
+  #fabframe-wardrobe-blog .ff-toc{
     grid-template-columns:1fr 1fr;
   }
 
-  #ffw-page .ffw-card,
-  #ffw-page .ffw-intro{
+  #fabframe-wardrobe-blog .ff-card{
     padding:25px;
   }
 
-  #ffw-page .ffw-contact{
+  #fabframe-wardrobe-blog .ff-contact-box,
+  #fabframe-wardrobe-blog .ff-site-box{
     align-items:flex-start;
     flex-direction:column;
   }
 
-  #ffw-page .ffw-btn{
+  #fabframe-wardrobe-blog .ff-btn{
     width:100%;
   }
 
-  #ffw-page .ffw-wa span{
-    display:none;
+  #fabframe-wardrobe-blog .ff-floating-wa{
+    width:56px;
+    padding:0;
   }
 
-  #ffw-page .ffw-wa{
-    width:54px;
-    padding:0;
-    justify-content:center;
+  #fabframe-wardrobe-blog .ff-floating-wa span{
+    display:none;
   }
 }
 </style>
 
-<div id="ffw-page">
+<div id="fabframe-wardrobe-blog">
 
-  <div class="ffw-top">
-    Planning a wardrobe in Una, Chandigarh, Punjab or North India?
+  <div class="ff-topbar">
+
+    Explore wardrobe solutions at
+
+    <a
+      href="https://fabframe.in/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      FabFrame.in
+    </a>
+
+    ·
+
     <a
       href="https://wa.me/917404984049?text=Hello%20FabFrame%2C%20I%20want%20a%20custom%20wardrobe.%20My%20location%20is%3A%20"
       target="_blank"
-      rel="noopener"
+      rel="noopener noreferrer"
     >
       WhatsApp 74049 84049
     </a>
+
   </div>
 
-  <header class="ffw-hero">
+  <header class="ff-hero">
 
-    <div class="ffw-wrap ffw-nav">
+    <div class="ff-container ff-nav">
 
       <a
-        class="ffw-logo"
+        class="ff-brand"
         href="https://fabframe.in/"
         target="_blank"
-        rel="noopener"
+        rel="noopener noreferrer"
       >
-        <b>F</b>
+
+        <span class="ff-brand-mark">
+          F
+        </span>
 
         <span>
           <strong>FabFrame</strong>
-          <small>Wardrobe Solutions</small>
+          <span>Custom Wardrobe Solutions</span>
         </span>
+
       </a>
 
-      <nav class="ffw-navlinks">
-        <a href="#ffw-guide">Buying Guide</a>
-        <a href="#ffw-designs">Designs</a>
-        <a href="#ffw-locations">Locations</a>
-        <a href="#ffw-faq">FAQs</a>
+      <nav class="ff-navlinks">
+
+        <a href="#ff-guide">
+          Buying Guide
+        </a>
+
+        <a href="#ff-designs">
+          Designs
+        </a>
+
+        <a href="#ff-locations">
+          Locations
+        </a>
 
         <a
+          href="https://fabframe.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Official Website
+        </a>
+
+        <a
+          class="ff-nav-cta"
           href="https://wa.me/917404984049?text=Hello%20FabFrame%2C%20please%20share%20custom%20wardrobe%20details.%20My%20location%20is%3A%20"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           Get Consultation
         </a>
+
       </nav>
 
     </div>
 
-    <div class="ffw-wrap ffw-herogrid">
+    <div class="ff-container ff-hero-grid">
 
-      <div>
+      <div class="ff-hero-copy">
 
-        <span class="ffw-kicker">
+        <span class="ff-label">
           Made-to-measure wardrobe systems
         </span>
 
-        <h1>Best Wardrobe Manufacturers in India</h1>
+        <h1>
+          Best Wardrobe Manufacturers in India
+        </h1>
 
-        <p class="ffw-lead">
-          FabFrame creates
-          <strong>custom wardrobes from Una, Himachal Pradesh</strong>
-          for bedrooms, dressing areas and modern interiors across Chandigarh,
-          Punjab, Haryana, Uttarakhand, Jammu &amp; Kashmir and other North
-          India locations.
+        <p>
+          <strong>FabFrame</strong> designs custom wardrobes from Una,
+          Himachal Pradesh for bedrooms, apartments, villas and modern
+          interior projects across Chandigarh, Mohali, Punjab, Haryana,
+          Uttarakhand, Jammu &amp; Kashmir and other North India locations.
         </p>
 
-        <p class="ffw-lead">
-          From openable shutters and space-saving sliding wardrobes to walk-in
-          closets and intelligent organisers, every solution is planned around
-          your room measurements, storage routine and interior style.
-        </p>
-
-        <div class="ffw-actions">
+        <p>
+          Explore openable wardrobes, sliding wardrobes, walk-in closets,
+          shoe racks and intelligent organisers on the
 
           <a
-            class="ffw-btn ffw-btn-orange"
+            class="ff-inline-link"
+            href="https://fabframe.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            official FabFrame website
+          </a>.
+        </p>
+
+        <div class="ff-actions">
+
+          <a
+            class="ff-btn ff-btn-orange"
             href="https://wa.me/917404984049?text=Hello%20FabFrame%2C%20I%20want%20a%20custom%20wardrobe.%20My%20location%20is%3A%20"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             WhatsApp 74049 84049
           </a>
 
           <a
-            class="ffw-btn ffw-btn-white"
-            href="tel:+917404984049"
+            class="ff-btn ff-btn-white"
+            href="https://fabframe.in/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Call FabFrame
+            Visit FabFrame.in
           </a>
 
           <a
-            class="ffw-btn ffw-btn-outline"
-            href="https://fabframe.in/wardrobe"
-            target="_blank"
-            rel="noopener"
+            class="ff-btn ff-btn-outline"
+            href="tel:+917404984049"
           >
-            View Wardrobes
+            Call FabFrame
           </a>
 
         </div>
@@ -994,38 +1067,38 @@ Do not paste it into a Visual/Text paragraph block.
       </div>
 
       <div
-        class="ffw-visual"
+        class="ff-visual"
         aria-label="Modern custom wardrobe illustration"
       >
 
-        <div class="ffw-room">
+        <div class="ff-room">
 
-          <div class="ffw-wallline"></div>
+          <div class="ff-wardrobe">
 
-          <div class="ffw-closet">
+            <div class="ff-glass-door"></div>
 
-            <div class="ffw-door"></div>
+            <div class="ff-open-side">
 
-            <div class="ffw-open">
-              <div class="ffw-shelf"></div>
-              <div class="ffw-rail"></div>
+              <div class="ff-shelf"></div>
+              <div class="ff-rail"></div>
 
-              <div class="ffw-clothes">
+              <div class="ff-clothes">
                 <i></i>
                 <i></i>
                 <i></i>
               </div>
 
-              <div class="ffw-drawers">
+              <div class="ff-drawers">
                 <span></span>
                 <span></span>
               </div>
+
             </div>
 
           </div>
 
-          <span class="ffw-badge">
-            Designed for your room &amp; location
+          <span class="ff-visual-badge">
+            Designed for your room and location
           </span>
 
         </div>
@@ -1036,391 +1109,192 @@ Do not paste it into a Visual/Text paragraph block.
 
   </header>
 
-  <div class="ffw-wrap ffw-strip">
+  <div class="ff-container ff-stats">
 
-    <div class="ffw-stat">
+    <div class="ff-stat">
       <strong>Custom Sizing</strong>
-      <span>Planned around the room</span>
+      <span>Designed around your room</span>
     </div>
 
-    <div class="ffw-stat">
-      <strong>Multiple Formats</strong>
-      <span>Openable, sliding &amp; walk-in</span>
+    <div class="ff-stat">
+      <strong>Multiple Designs</strong>
+      <span>Sliding, openable and walk-in</span>
     </div>
 
-    <div class="ffw-stat">
+    <div class="ff-stat">
       <strong>Una, Himachal</strong>
       <span>FabFrame manufacturing base</span>
     </div>
 
-    <div class="ffw-stat">
+    <div class="ff-stat">
       <strong>74049 84049</strong>
-      <span>Direct WhatsApp support</span>
+      <span>Direct WhatsApp assistance</span>
     </div>
 
   </div>
 
-  <main class="ffw-wrap ffw-main">
+  <main class="ff-container ff-main">
 
-    <div class="ffw-layout">
+    <div class="ff-layout">
 
-      <aside class="ffw-toc">
+      <aside class="ff-toc">
 
-        <strong>In this wardrobe guide</strong>
+        <strong>
+          Wardrobe Guide
+        </strong>
 
-        <a href="#ffw-guide">Choosing a manufacturer</a>
-        <a href="#ffw-designs">Wardrobe designs</a>
-        <a href="#ffw-planning">Planning checklist</a>
-        <a href="#ffw-process">Project process</a>
-        <a href="#ffw-locations">Service locations</a>
-        <a href="#ffw-faq">FAQs</a>
+        <a href="#ff-guide">
+          Choosing a manufacturer
+        </a>
+
+        <a href="#ff-designs">
+          Wardrobe designs
+        </a>
+
+        <a href="#ff-planning">
+          Planning checklist
+        </a>
+
+        <a href="#ff-process">
+          Project process
+        </a>
+
+        <a href="#ff-locations">
+          Service locations
+        </a>
+
+        <a href="#ff-faq">
+          FAQs
+        </a>
+
+        <a
+          href="https://fabframe.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit FabFrame.in
+        </a>
 
       </aside>
 
       <article>
 
         <section
-          class="ffw-card ffw-intro"
-          id="ffw-guide"
+          class="ff-card"
+          id="ff-guide"
         >
 
-          <div class="ffw-label">
-            A practical buying guide
+          <div class="ff-eyebrow">
+            Wardrobe buying guide
           </div>
 
           <h2>
-            What Makes a Wardrobe Manufacturer the Right Choice?
+            How to Choose the Right Wardrobe Manufacturer
           </h2>
 
           <p>
-            A wardrobe is not only a storage cabinet. It affects circulation,
-            room balance and daily convenience. The right manufacturer studies
-            the available wall, ceiling height, door movement, switches,
-            skirting and your actual storage needs before suggesting a layout.
+            A wardrobe should be designed around your available wall,
+            ceiling height, room circulation, door movement and everyday
+            storage requirements. A reliable manufacturer studies the
+            actual room before suggesting the final wardrobe layout.
           </p>
 
           <p>
-            When homeowners search for
-            <strong>Custom Wardrobe Manufacturers India</strong>, they should
-            compare customisation, finish options, internal planning,
-            installation quality and after-sales communication—not only the
-            outer appearance.
+            Homeowners searching for
+            <strong>Custom Wardrobe Manufacturers India</strong>
+            should compare customisation options, storage planning,
+            finishing quality, shutter systems, installation support
+            and communication.
           </p>
 
-          <div class="ffw-note">
-            <strong>Location matters:</strong>
-            For a project in Una, Shimla, Chandigarh, Mohali, Ludhiana,
-            Haryana or another North India city, share your exact site
-            location and room photographs on WhatsApp at
+          <p>
+            FabFrame offers wardrobe solutions for homes in Una,
+            Himachal Pradesh, Chandigarh, Mohali, Punjab, Haryana,
+            Uttarakhand, Jammu &amp; Kashmir and other North India areas.
+            You can explore the complete company profile and products at
 
             <a
-              href="https://wa.me/917404984049?text=Hello%20FabFrame%2C%20I%20want%20a%20wardrobe%20consultation.%20My%20location%20is%3A%20"
+              class="ff-text-link"
+              href="https://fabframe.in/"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
-              <strong>74049 84049</strong>
+              https://fabframe.in/
             </a>.
-          </div>
-
-          <div class="ffw-gallery">
-
-            <figure class="ffw-photo">
-              <img
-                src="https://fabframe.in/admin/uploads/products/68678116b2be3.webp"
-                alt="Custom openable wardrobe by FabFrame in Una Himachal Pradesh"
-                loading="lazy"
-              >
-              <span>Openable wardrobe</span>
-            </figure>
-
-            <figure class="ffw-photo">
-              <img
-                src="https://fabframe.in/admin/uploads/products/684bd4107dc92.webp"
-                alt="Sliding wardrobe manufacturer serving Chandigarh and Punjab"
-                loading="lazy"
-              >
-              <span>Sliding wardrobe</span>
-            </figure>
-
-          </div>
-
-        </section>
-
-        <section
-          class="ffw-card"
-          id="ffw-designs"
-        >
-
-          <div class="ffw-label">
-            Wardrobe options by FabFrame
-          </div>
-
-          <h2>
-            Choose a Wardrobe Style That Fits Your Space
-          </h2>
-
-          <p>
-            FabFrame offers wardrobe formats for compact bedrooms, large master
-            suites and dedicated dressing rooms. The final configuration can
-            be adapted to the room size, storage requirement and project
-            location.
           </p>
 
-          <div class="ffw-types">
+          <div class="ff-note">
 
-            <div class="ffw-type">
+            <strong>Need a wardrobe quotation?</strong>
 
-              <img
-                src="https://fabframe.in/admin/uploads/products/68678116b2be3.webp"
-                alt="Openable wardrobe manufacturers in Himachal Pradesh"
-                loading="lazy"
-              >
-
-              <div class="ffw-typebody">
-
-                <h3>Openable Wardrobes</h3>
-
-                <p>
-                  Classic hinged shutters offer complete access to the wardrobe
-                  and work well where comfortable opening space is available.
-                </p>
-
-                <span class="ffw-city">
-                  Una &amp; Himachal Pradesh projects
-                </span>
-
-              </div>
-
-            </div>
-
-            <div class="ffw-type">
-
-              <img
-                src="https://fabframe.in/admin/uploads/products/684bd4107dc92.webp"
-                alt="Custom sliding wardrobes in Chandigarh Punjab and Haryana"
-                loading="lazy"
-              >
-
-              <div class="ffw-typebody">
-
-                <h3>Sliding Wardrobes</h3>
-
-                <p>
-                  Sliding shutters save floor clearance and create a clean,
-                  contemporary look for urban bedrooms and apartments.
-                </p>
-
-                <span class="ffw-city">
-                  Chandigarh, Punjab &amp; Haryana
-                </span>
-
-              </div>
-
-            </div>
-
-            <div class="ffw-type">
-
-              <img
-                src="https://fabframe.in/admin/uploads/products/684bcf1a920a2.webp"
-                alt="Walk in closet manufacturer for North India homes"
-                loading="lazy"
-              >
-
-              <div class="ffw-typebody">
-
-                <h3>Walk-in Closets</h3>
-
-                <p>
-                  Plan separate hanging, display, drawer and accessory zones
-                  for a premium dressing experience in larger spaces.
-                </p>
-
-                <span class="ffw-city">
-                  Premium North India interiors
-                </span>
-
-              </div>
-
-            </div>
-
-            <div class="ffw-type">
-
-              <img
-                src="https://fabframe.in/admin/uploads/products/684bd3ebc892a.jpg"
-                alt="Custom wardrobe organisers and storage accessories India"
-                loading="lazy"
-              >
-
-              <div class="ffw-typebody">
-
-                <h3>Organisers &amp; Shoe Storage</h3>
-
-                <p>
-                  Purpose-built drawers, shelves, hanging sections and shoe
-                  storage keep everyday items organised and easy to reach.
-                </p>
-
-                <span class="ffw-city">
-                  Custom internal planning
-                </span>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </section>
-
-        <section
-          class="ffw-card"
-          id="ffw-planning"
-        >
-
-          <div class="ffw-label">
-            Before finalising the design
-          </div>
-
-          <h2>
-            Six Details That Improve Wardrobe Planning
-          </h2>
-
-          <div class="ffw-grid">
-
-            <div
-              class="ffw-feature"
-              style="background:#f7fafb;border-color:#dbe5ea"
-            >
-              <h3>1. Accurate Measurements</h3>
-              <p style="color:#60717d">
-                Record wall width, ceiling height, depth, skirting, sockets,
-                windows and door movement.
-              </p>
-            </div>
-
-            <div
-              class="ffw-feature"
-              style="background:#f7fafb;border-color:#dbe5ea"
-            >
-              <h3>2. Storage Categories</h3>
-              <p style="color:#60717d">
-                Separate long hanging, short hanging, folded clothes, drawers,
-                luggage, accessories and shoes.
-              </p>
-            </div>
-
-            <div
-              class="ffw-feature"
-              style="background:#f7fafb;border-color:#dbe5ea"
-            >
-              <h3>3. Shutter Selection</h3>
-              <p style="color:#60717d">
-                Choose sliding shutters for limited clearance or openable
-                shutters for full internal access.
-              </p>
-            </div>
-
-            <div
-              class="ffw-feature"
-              style="background:#f7fafb;border-color:#dbe5ea"
-            >
-              <h3>4. Finish Coordination</h3>
-              <p style="color:#60717d">
-                Match the wardrobe palette with flooring, wall colours,
-                furniture and overall interior character.
-              </p>
-            </div>
-
-            <div
-              class="ffw-feature"
-              style="background:#f7fafb;border-color:#dbe5ea"
-            >
-              <h3>5. Site Location</h3>
-              <p style="color:#60717d">
-                Share whether the site is in Una, Chandigarh, Punjab, Haryana
-                or another service location.
-              </p>
-            </div>
-
-            <div
-              class="ffw-feature"
-              style="background:#f7fafb;border-color:#dbe5ea"
-            >
-              <h3>6. Daily Convenience</h3>
-              <p style="color:#60717d">
-                Keep frequently used storage at practical heights and reserve
-                upper areas for seasonal items.
-              </p>
-            </div>
-
-          </div>
-
-        </section>
-
-        <section class="ffw-card ffw-why">
-
-          <div
-            class="ffw-label"
-            style="color:#8ce0dc"
-          >
-            FabFrame advantage
-          </div>
-
-          <h2>
-            Custom Wardrobes Planned for Real Homes
-          </h2>
-
-          <p>
-            FabFrame combines made-to-measure planning, multiple shutter
-            formats and location-based project discussion for homeowners,
-            architects and interior professionals.
-          </p>
-
-          <div class="ffw-grid">
-
-            <div class="ffw-feature">
-              <h3>Room-Specific Design</h3>
-              <p>
-                The wardrobe is considered in relation to the usable wall,
-                room circulation and storage routine.
-              </p>
-            </div>
-
-            <div class="ffw-feature">
-              <h3>Complete Product Range</h3>
-              <p>
-                Discuss openable wardrobes, sliding wardrobes, walk-in
-                closets, organisers, shoe racks and handles.
-              </p>
-            </div>
-
-            <div class="ffw-feature">
-              <h3>North India Coverage</h3>
-              <p>
-                Enquiries are supported across Himachal Pradesh, Chandigarh,
-                Punjab, Haryana, Uttarakhand and Jammu &amp; Kashmir.
-              </p>
-            </div>
-
-            <div class="ffw-feature">
-              <h3>Direct Assistance</h3>
-              <p>
-                Send measurements, room images and your city directly to
-                FabFrame at 74049 84049.
-              </p>
-            </div>
-
-          </div>
-
-          <div class="ffw-actions">
+            Send your room photographs, approximate dimensions and
+            project location on WhatsApp at
 
             <a
-              class="ffw-btn ffw-btn-orange"
-              href="https://wa.me/917404984049?text=Hello%20FabFrame%2C%20I%20want%20to%20discuss%20a%20custom%20wardrobe.%20My%20location%20is%3A%20"
+              class="ff-text-link"
+              href="https://wa.me/917404984049?text=Hello%20FabFrame%2C%20I%20need%20a%20custom%20wardrobe%20quotation.%20My%20location%20is%3A%20"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
-              Discuss Your Wardrobe
+              74049 84049
+            </a>.
+
+          </div>
+
+          <div class="ff-gallery">
+
+            <figure class="ff-photo">
+
+              <img
+                src="https://fabframe.in/admin/uploads/products/68678116b2be3.webp"
+                alt="Openable custom wardrobe manufacturer in Una Himachal Pradesh"
+                loading="lazy"
+              >
+
+              <span>
+                Openable wardrobe
+              </span>
+
+            </figure>
+
+            <figure class="ff-photo">
+
+              <img
+                src="https://fabframe.in/admin/uploads/products/684bd4107dc92.webp"
+                alt="Sliding wardrobe manufacturers serving Chandigarh Punjab and Haryana"
+                loading="lazy"
+              >
+
+              <span>
+                Sliding wardrobe
+              </span>
+
+            </figure>
+
+          </div>
+
+          <div class="ff-site-box">
+
+            <div>
+
+              <strong>
+                Explore more FabFrame solutions
+              </strong>
+
+              <span>
+                Visit the official website for wardrobes, doors,
+                windows and glass solutions.
+              </span>
+
+            </div>
+
+            <a
+              class="ff-btn ff-btn-orange"
+              href="https://fabframe.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open FabFrame.in
             </a>
 
           </div>
@@ -1428,124 +1302,171 @@ Do not paste it into a Visual/Text paragraph block.
         </section>
 
         <section
-          class="ffw-card"
-          id="ffw-process"
+          class="ff-card"
+          id="ff-designs"
         >
 
-          <div class="ffw-label">
-            Simple project journey
+          <div class="ff-eyebrow">
+            FabFrame wardrobe collection
           </div>
 
           <h2>
-            From Room Details to Wardrobe Installation
+            Wardrobe Styles for Different Rooms and Locations
           </h2>
 
           <p>
-            For a clearer first discussion, send the room information and
-            location together. This is especially useful for projects outside
-            Una, Himachal Pradesh.
-          </p>
-
-          <div class="ffw-steps">
-
-            <div class="ffw-step">
-              <b>01</b>
-              <h3>Share Details</h3>
-              <p>
-                Send your city, room photos, approximate size and preferred
-                wardrobe reference.
-              </p>
-            </div>
-
-            <div class="ffw-step">
-              <b>02</b>
-              <h3>Review Layout</h3>
-              <p>
-                Discuss wall dimensions, obstructions, access and the most
-                suitable shutter format.
-              </p>
-            </div>
-
-            <div class="ffw-step">
-              <b>03</b>
-              <h3>Select Design</h3>
-              <p>
-                Finalise finishes, internal zones, handles and useful wardrobe
-                accessories.
-              </p>
-            </div>
-
-            <div class="ffw-step">
-              <b>04</b>
-              <h3>Plan Execution</h3>
-              <p>
-                Manufacturing and installation are scheduled according to
-                approved scope and site readiness.
-              </p>
-            </div>
-
-          </div>
-
-        </section>
-
-        <section
-          class="ffw-card ffw-location"
-          id="ffw-locations"
-        >
-
-          <div class="ffw-label">
-            Location-focused wardrobe service
-          </div>
-
-          <h2>
-            Custom Wardrobe Manufacturers in Una, Himachal Pradesh
-          </h2>
-
-          <p>
-            FabFrame is located at
-            <strong>
-              Plot Number 163-164, V.P.O. Bela Bathri, District Una,
-              Himachal Pradesh – 174301
-            </strong>.
-            The team supports custom wardrobe enquiries for homes, villas,
-            apartments and interior projects across North India, subject to
-            project feasibility.
+            FabFrame provides wardrobe formats for compact bedrooms,
+            large master bedrooms, luxury villas, apartments and
+            dedicated dressing areas. Each wardrobe can be customised
+            according to the room dimensions, storage preferences and
+            installation location.
           </p>
 
           <p>
-            Customers searching for wardrobe manufacturers in Chandigarh,
-            custom wardrobes in Punjab, wardrobe solutions in Haryana,
-            wardrobes in Uttarakhand or wardrobe manufacturers in Jammu &amp;
-            Kashmir can share their location and project details directly.
-          </p>
-
-          <div class="ffw-tags">
-            <span>Una</span>
-            <span>Himachal Pradesh</span>
-            <span>Chandigarh</span>
-            <span>Mohali</span>
-            <span>Punjab</span>
-            <span>Haryana</span>
-            <span>Uttarakhand</span>
-            <span>Jammu &amp; Kashmir</span>
-            <span>North India</span>
-          </div>
-
-          <div class="ffw-contact">
-
-            <div>
-              <strong>Send your room measurements and city</strong>
-              <small>
-                FabFrame office hours: Tuesday–Sunday, 10:00 AM–5:30 PM.
-                Monday closed.
-              </small>
-            </div>
+            Visit
 
             <a
-              class="ffw-btn ffw-btn-orange"
-              href="https://wa.me/917404984049?text=Hello%20FabFrame%2C%20I%20need%20a%20wardrobe%20quotation.%20My%20location%20is%3A%20"
+              class="ff-text-link"
+              href="https://fabframe.in/"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
+            >
+              FabFrame.in
+            </a>
+
+            to learn more about the brand and its complete product range.
+          </p>
+
+          <div class="ff-types">
+
+            <div class="ff-type">
+
+              <img
+                src="https://fabframe.in/admin/uploads/products/68678116b2be3.webp"
+                alt="Custom openable wardrobe manufacturers in Himachal Pradesh"
+                loading="lazy"
+              >
+
+              <div class="ff-type-content">
+
+                <h3>
+                  Openable Wardrobes
+                </h3>
+
+                <p>
+                  Hinged shutters provide full access to the internal
+                  storage and work well in bedrooms with comfortable
+                  door-opening clearance.
+                </p>
+
+                <span class="ff-city-tag">
+                  Una and Himachal Pradesh
+                </span>
+
+              </div>
+
+            </div>
+
+            <div class="ff-type">
+
+              <img
+                src="https://fabframe.in/admin/uploads/products/684bd4107dc92.webp"
+                alt="Custom sliding wardrobe manufacturers in Chandigarh Punjab"
+                loading="lazy"
+              >
+
+              <div class="ff-type-content">
+
+                <h3>
+                  Sliding Wardrobes
+                </h3>
+
+                <p>
+                  Sliding shutters save floor space and create a clean,
+                  contemporary appearance for apartments and compact rooms.
+                </p>
+
+                <span class="ff-city-tag">
+                  Chandigarh, Mohali and Punjab
+                </span>
+
+              </div>
+
+            </div>
+
+            <div class="ff-type">
+
+              <img
+                src="https://fabframe.in/admin/uploads/products/684bcf1a920a2.webp"
+                alt="Walk in closet manufacturers for luxury homes in North India"
+                loading="lazy"
+              >
+
+              <div class="ff-type-content">
+
+                <h3>
+                  Walk-in Closets
+                </h3>
+
+                <p>
+                  Dedicated hanging, drawer, display and accessory zones
+                  create a premium dressing experience for larger spaces.
+                </p>
+
+                <span class="ff-city-tag">
+                  Villas and premium interiors
+                </span>
+
+              </div>
+
+            </div>
+
+            <div class="ff-type">
+
+              <img
+                src="https://fabframe.in/admin/uploads/products/684bd3ebc892a.jpg"
+                alt="Custom wardrobe organisers and shoe storage in India"
+                loading="lazy"
+              >
+
+              <div class="ff-type-content">
+
+                <h3>
+                  Organisers and Shoe Storage
+                </h3>
+
+                <p>
+                  Custom drawers, shelves, hanging sections and shoe
+                  organisers make everyday storage easier and more practical.
+                </p>
+
+                <span class="ff-city-tag">
+                  Personalised internal storage
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="ff-actions">
+
+            <a
+              class="ff-btn ff-btn-orange"
+              href="https://fabframe.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View More at FabFrame.in
+            </a>
+
+            <a
+              class="ff-btn"
+              style="color:#fff;background:#16324f;"
+              href="https://wa.me/917404984049?text=Hello%20FabFrame%2C%20please%20share%20wardrobe%20designs.%20My%20location%20is%3A%20"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               WhatsApp 74049 84049
             </a>
@@ -1555,78 +1476,603 @@ Do not paste it into a Visual/Text paragraph block.
         </section>
 
         <section
-          class="ffw-card"
-          id="ffw-faq"
+          class="ff-card"
+          id="ff-planning"
         >
 
-          <div class="ffw-label">
-            Helpful answers
+          <div class="ff-eyebrow">
+            Wardrobe planning checklist
           </div>
 
-          <h2>Frequently Asked Questions</h2>
+          <h2>
+            Details to Finalise Before Ordering a Wardrobe
+          </h2>
+
+          <div class="ff-feature-grid">
+
+            <div class="ff-feature">
+
+              <h3>
+                Accurate Measurements
+              </h3>
+
+              <p>
+                Record wall width, height, depth, skirting, switches,
+                windows and nearby door movement.
+              </p>
+
+            </div>
+
+            <div class="ff-feature">
+
+              <h3>
+                Storage Categories
+              </h3>
+
+              <p>
+                Plan separate areas for hanging clothes, folded items,
+                drawers, luggage, accessories and shoes.
+              </p>
+
+            </div>
+
+            <div class="ff-feature">
+
+              <h3>
+                Shutter Selection
+              </h3>
+
+              <p>
+                Select sliding shutters for compact rooms or openable
+                shutters for complete internal access.
+              </p>
+
+            </div>
+
+            <div class="ff-feature">
+
+              <h3>
+                Interior Coordination
+              </h3>
+
+              <p>
+                Match the wardrobe finish with flooring, wall colours,
+                furniture and the overall interior theme.
+              </p>
+
+            </div>
+
+            <div class="ff-feature">
+
+              <h3>
+                Project Location
+              </h3>
+
+              <p>
+                Share whether the project is in Una, Shimla, Chandigarh,
+                Mohali, Punjab, Haryana or another North India location.
+              </p>
+
+            </div>
+
+            <div class="ff-feature">
+
+              <h3>
+                Daily Convenience
+              </h3>
+
+              <p>
+                Keep frequently used storage at practical heights and
+                reserve upper shelves for seasonal items.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="ff-site-box">
+
+            <div>
+
+              <strong>
+                Need help planning your wardrobe?
+              </strong>
+
+              <span>
+                Share your room details with FabFrame or visit the
+                official website.
+              </span>
+
+            </div>
+
+            <a
+              class="ff-btn ff-btn-orange"
+              href="https://fabframe.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit Website
+            </a>
+
+          </div>
+
+        </section>
+
+        <section class="ff-card ff-dark-card">
+
+          <div
+            class="ff-eyebrow"
+            style="color:#ffd19a;"
+          >
+            Why choose FabFrame
+          </div>
+
+          <h2>
+            Wardrobes Designed for Real Homes
+          </h2>
+
+          <p>
+            FabFrame combines room-specific planning, multiple wardrobe
+            formats and direct project assistance for homeowners,
+            architects and interior professionals.
+          </p>
+
+          <div class="ff-feature-grid">
+
+            <div class="ff-feature">
+
+              <h3>
+                Made-to-Measure Planning
+              </h3>
+
+              <p>
+                Wardrobes are discussed according to usable wall space,
+                room circulation and storage requirements.
+              </p>
+
+            </div>
+
+            <div class="ff-feature">
+
+              <h3>
+                Complete Wardrobe Range
+              </h3>
+
+              <p>
+                Choose openable, sliding, walk-in, shoe storage,
+                organisers and suitable handle options.
+              </p>
+
+            </div>
+
+            <div class="ff-feature">
+
+              <h3>
+                North India Enquiries
+              </h3>
+
+              <p>
+                Enquiries are supported from Himachal Pradesh,
+                Chandigarh, Punjab, Haryana, Uttarakhand and Jammu
+                &amp; Kashmir.
+              </p>
+
+            </div>
+
+            <div class="ff-feature">
+
+              <h3>
+                Direct Customer Support
+              </h3>
+
+              <p>
+                Send room photographs, approximate measurements and
+                your location directly on WhatsApp.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="ff-actions">
+
+            <a
+              class="ff-btn ff-btn-orange"
+              href="https://wa.me/917404984049?text=Hello%20FabFrame%2C%20I%20want%20to%20discuss%20a%20custom%20wardrobe.%20My%20location%20is%3A%20"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Discuss Your Wardrobe
+            </a>
+
+            <a
+              class="ff-btn ff-btn-white"
+              href="https://fabframe.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Explore FabFrame.in
+            </a>
+
+          </div>
+
+        </section>
+
+        <section
+          class="ff-card"
+          id="ff-process"
+        >
+
+          <div class="ff-eyebrow">
+            Simple project process
+          </div>
+
+          <h2>
+            From Room Details to Wardrobe Installation
+          </h2>
+
+          <p>
+            Share the room information and your location together for
+            a clearer first discussion, especially for projects outside
+            Una, Himachal Pradesh.
+          </p>
+
+          <div class="ff-steps">
+
+            <div class="ff-step">
+
+              <b>01</b>
+
+              <h3>
+                Share Details
+              </h3>
+
+              <p>
+                Send room photos, approximate dimensions, city and
+                preferred wardrobe reference.
+              </p>
+
+            </div>
+
+            <div class="ff-step">
+
+              <b>02</b>
+
+              <h3>
+                Review Layout
+              </h3>
+
+              <p>
+                Discuss available wall space, obstructions and the
+                suitable shutter format.
+              </p>
+
+            </div>
+
+            <div class="ff-step">
+
+              <b>03</b>
+
+              <h3>
+                Select Design
+              </h3>
+
+              <p>
+                Finalise finishes, internal storage zones, handles and
+                useful accessories.
+              </p>
+
+            </div>
+
+            <div class="ff-step">
+
+              <b>04</b>
+
+              <h3>
+                Plan Execution
+              </h3>
+
+              <p>
+                Manufacturing and installation can be planned according
+                to approved scope and site readiness.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="ff-actions">
+
+            <a
+              class="ff-btn ff-btn-orange"
+              href="https://wa.me/917404984049?text=Hello%20FabFrame%2C%20I%20want%20to%20start%20a%20wardrobe%20project.%20My%20location%20is%3A%20"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Start on WhatsApp
+            </a>
+
+            <a
+              class="ff-btn"
+              style="color:#fff;background:#16324f;"
+              href="https://fabframe.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit Official Website
+            </a>
+
+          </div>
+
+        </section>
+
+        <section
+          class="ff-card ff-location"
+          id="ff-locations"
+        >
+
+          <div class="ff-eyebrow">
+            Location-based wardrobe service
+          </div>
+
+          <h2>
+            Custom Wardrobe Manufacturers in Una, Himachal Pradesh
+          </h2>
+
+          <p>
+            FabFrame is located at
+            <strong>
+              Plot Number 163-164, V.P.O. Bela Bathri,
+              District Una, Himachal Pradesh – 174301
+            </strong>.
+          </p>
+
+          <p>
+            The company supports custom wardrobe enquiries for houses,
+            apartments, villas and interior projects across Una,
+            Himachal Pradesh, Chandigarh, Mohali, Punjab, Haryana,
+            Uttarakhand, Jammu &amp; Kashmir and other North India areas,
+            subject to project feasibility.
+          </p>
+
+          <p>
+            Customers looking for wardrobe manufacturers in Chandigarh,
+            custom wardrobes in Punjab, sliding wardrobes in Mohali,
+            wardrobe solutions in Haryana or wardrobes in Himachal
+            Pradesh can visit
+
+            <a
+              class="ff-text-link"
+              href="https://fabframe.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://fabframe.in/
+            </a>
+
+            or contact the FabFrame team directly.
+          </p>
+
+          <div class="ff-location-tags">
+
+            <span>Una</span>
+            <span>Himachal Pradesh</span>
+            <span>Shimla</span>
+            <span>Chandigarh</span>
+            <span>Mohali</span>
+            <span>Punjab</span>
+            <span>Haryana</span>
+            <span>Uttarakhand</span>
+            <span>Jammu &amp; Kashmir</span>
+            <span>North India</span>
+
+          </div>
+
+          <div class="ff-contact-box">
+
+            <div>
+
+              <strong>
+                Share your room measurements and project city
+              </strong>
+
+              <small>
+                Office hours: Tuesday to Sunday, 10:00 AM–5:30 PM.
+                Monday closed.
+              </small>
+
+            </div>
+
+            <a
+              class="ff-btn ff-btn-orange"
+              href="https://wa.me/917404984049?text=Hello%20FabFrame%2C%20I%20need%20a%20wardrobe%20quotation.%20My%20location%20is%3A%20"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp 74049 84049
+            </a>
+
+          </div>
+
+          <div class="ff-site-box">
+
+            <div>
+
+              <strong>
+                FabFrame Official Website
+              </strong>
+
+              <span>
+                Browse the complete product range, company details
+                and contact information.
+              </span>
+
+            </div>
+
+            <a
+              class="ff-btn ff-btn-orange"
+              href="https://fabframe.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open FabFrame.in
+            </a>
+
+          </div>
+
+        </section>
+
+        <section
+          class="ff-card"
+          id="ff-faq"
+        >
+
+          <div class="ff-eyebrow">
+            Frequently asked questions
+          </div>
+
+          <h2>
+            Custom Wardrobe FAQs
+          </h2>
 
           <details>
+
             <summary>
               Does FabFrame provide made-to-measure wardrobes?
             </summary>
+
             <p>
               Yes. Wardrobe layouts can be planned according to room
-              measurements, available wall space, storage needs, shutter
-              choice and selected finishes.
+              measurements, available wall space, storage requirements,
+              shutter choice and selected finishes.
             </p>
+
           </details>
 
           <details>
+
             <summary>
               Which wardrobe styles are available?
             </summary>
+
             <p>
-              FabFrame offers openable wardrobes, sliding wardrobes, walk-in
-              closets, shoe racks, wardrobe organisers and handle options.
+              FabFrame offers openable wardrobes, sliding wardrobes,
+              walk-in closets, shoe racks, wardrobe organisers and
+              handle options.
             </p>
+
           </details>
 
           <details>
+
             <summary>
               Where is FabFrame located?
             </summary>
+
             <p>
-              FabFrame is located at Plot Number 163-164, V.P.O. Bela Bathri,
-              District Una, Himachal Pradesh – 174301.
+              FabFrame is located at Plot Number 163-164,
+              V.P.O. Bela Bathri, District Una,
+              Himachal Pradesh – 174301.
             </p>
+
           </details>
 
           <details>
+
             <summary>
-              Can I enquire from Chandigarh, Punjab or Haryana?
+              Can customers enquire from Chandigarh and Punjab?
             </summary>
+
             <p>
-              Yes. FabFrame accepts wardrobe enquiries from Himachal Pradesh,
-              Chandigarh, Punjab, Haryana, Uttarakhand, Jammu &amp; Kashmir and
-              other North India locations, subject to feasibility.
+              Yes. FabFrame accepts wardrobe enquiries from Himachal
+              Pradesh, Chandigarh, Mohali, Punjab, Haryana,
+              Uttarakhand, Jammu &amp; Kashmir and nearby North India
+              locations, subject to feasibility.
             </p>
+
           </details>
 
           <details>
+
             <summary>
               What should I send for a wardrobe quotation?
             </summary>
+
             <p>
-              Send your location, room photographs, approximate wall width and
-              height, preferred wardrobe style and reference image on WhatsApp
-              at 74049 84049.
+              Send your project location, room photographs,
+              approximate wall width and height, preferred wardrobe
+              style and reference image on WhatsApp at 74049 84049.
             </p>
+
           </details>
 
           <details>
+
+            <summary>
+              How can I explore FabFrame products?
+            </summary>
+
+            <p>
+              Visit
+
+              <a
+                class="ff-text-link"
+                href="https://fabframe.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://fabframe.in/
+              </a>
+
+              to explore FabFrame products and company details.
+            </p>
+
+          </details>
+
+          <details>
+
             <summary>
               How can I contact FabFrame?
             </summary>
+
             <p>
-              Call or WhatsApp 74049 84049, email info@fabframe.in or visit
-              fabframe.in.
+              Call or WhatsApp 74049 84049, email info@fabframe.in
+              or visit the official website at
+
+              <a
+                class="ff-text-link"
+                href="https://fabframe.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                FabFrame.in
+              </a>.
             </p>
+
           </details>
+
+          <div class="ff-actions">
+
+            <a
+              class="ff-btn ff-btn-orange"
+              href="https://fabframe.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit FabFrame Website
+            </a>
+
+            <a
+              class="ff-btn"
+              style="color:#fff;background:#16324f;"
+              href="https://wa.me/917404984049?text=Hello%20FabFrame%2C%20I%20have%20a%20question%20about%20custom%20wardrobes.%20My%20location%20is%3A%20"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ask on WhatsApp
+            </a>
+
+          </div>
 
         </section>
 
@@ -1636,11 +2082,11 @@ Do not paste it into a Visual/Text paragraph block.
 
   </main>
 
-  <section class="ffw-final">
+  <section class="ff-final">
 
     <div
-      class="ffw-label"
-      style="color:#8ce0dc"
+      class="ff-eyebrow"
+      style="color:#ffd19a;"
     >
       Start with your room and location
     </div>
@@ -1650,61 +2096,77 @@ Do not paste it into a Visual/Text paragraph block.
     </h2>
 
     <p>
-      Share your city, room photographs, approximate dimensions and preferred
-      style. The FabFrame team in Una, Himachal Pradesh will help you discuss
-      the right wardrobe solution.
+      Share your city, room photographs, approximate dimensions and
+      preferred wardrobe design. The FabFrame team in Una,
+      Himachal Pradesh can help you discuss a suitable wardrobe solution.
     </p>
 
-    <div class="ffw-actions">
+    <div class="ff-actions">
 
       <a
-        class="ffw-btn ffw-btn-orange"
+        class="ff-btn ff-btn-orange"
         href="https://wa.me/917404984049?text=Hello%20FabFrame%2C%20please%20help%20me%20plan%20a%20custom%20wardrobe.%20My%20location%20is%3A%20"
         target="_blank"
-        rel="noopener"
+        rel="noopener noreferrer"
       >
         WhatsApp 74049 84049
       </a>
 
       <a
-        class="ffw-btn ffw-btn-white"
-        href="tel:+917404984049"
+        class="ff-btn ff-btn-white"
+        href="https://fabframe.in/"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        Call Now
+        Explore FabFrame.in
       </a>
 
       <a
-        class="ffw-btn ffw-btn-outline"
-        href="https://fabframe.in/"
-        target="_blank"
-        rel="noopener"
+        class="ff-btn ff-btn-outline"
+        href="tel:+917404984049"
       >
-        Visit FabFrame
+        Call FabFrame
       </a>
 
     </div>
 
   </section>
 
-  <footer class="ffw-footer">
+  <footer class="ff-footer">
 
-    <strong style="color:#fff">
+    <strong>
       FabFrame
     </strong>
 
     <br>
 
-    Plot Number 163-164, V.P.O. Bela Bathri, District Una,
-    Himachal Pradesh – 174301
+    Plot Number 163-164, V.P.O. Bela Bathri,
+    District Una, Himachal Pradesh – 174301
 
     <br>
 
     <a
+      href="https://fabframe.in/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Website: https://fabframe.in/
+    </a>
+
+    &nbsp;·&nbsp;
+
+    <a
       href="https://wa.me/917404984049?text=Hello%20FabFrame%2C%20I%20want%20a%20custom%20wardrobe.%20My%20location%20is%3A%20"
       target="_blank"
-      rel="noopener"
+      rel="noopener noreferrer"
     >
       WhatsApp: 74049 84049
+    </a>
+
+    &nbsp;·&nbsp;
+
+    <a href="tel:+917404984049">
+      Call: 74049 84049
     </a>
 
     &nbsp;·&nbsp;
@@ -1713,26 +2175,30 @@ Do not paste it into a Visual/Text paragraph block.
       info@fabframe.in
     </a>
 
-    &nbsp;·&nbsp;
+    <br>
+
+    Facebook · Instagram · LinkedIn ·
 
     <a
       href="https://fabframe.in/"
       target="_blank"
-      rel="noopener"
+      rel="noopener noreferrer"
     >
-      fabframe.in
+      Visit FabFrame Official Website
     </a>
 
   </footer>
 
   <a
-    class="ffw-wa"
+    class="ff-floating-wa"
     href="https://wa.me/917404984049?text=Hello%20FabFrame%2C%20I%20want%20a%20custom%20wardrobe.%20My%20location%20is%3A%20"
     target="_blank"
-    rel="noopener"
+    rel="noopener noreferrer"
     aria-label="Chat with FabFrame on WhatsApp"
   >
-    <span>WhatsApp 74049 84049</span>
+    <span>
+      WhatsApp 74049 84049
+    </span>
   </a>
 
 </div>
